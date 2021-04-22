@@ -1,7 +1,7 @@
 import scrapy
 from ..items import TgddtutorialItem
 class TgddSpider(scrapy.Spider):
-    name = 'a'
+    name = 'a' #
     page_number = 1
     base_url = 'https://www.thegioididong.com/'
     start_urls = ['https://www.thegioididong.com/dtdd#i:5']
