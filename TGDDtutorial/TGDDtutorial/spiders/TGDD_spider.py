@@ -1,10 +1,10 @@
 import scrapy
 from ..items import TgddtutorialItem
 class TgddSpider(scrapy.Spider):
-    name = 'a' #
+    name = 'a'
     page_number = 1
     base_url = 'https://www.thegioididong.com/'
-    start_urls = ['https://www.thegioididong.com/dtdd#i:5']
+    start_urls = ['https://www.thegioididong.com/dtdd']
 
     def parse(self, response):
         all_product = response.xpath('//li[contains(@class, "item")]')
